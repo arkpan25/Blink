@@ -4,6 +4,9 @@
   "description": "A basic note-taking API which Supports CRUD operations via a RESTful API for manipulating note objects.",
   "main": "server.js",
   "dependencies": {
+    "@chakra-ui/react": "^1.6.5",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
     "body-parser": "^1.18.3",
     "cors": "^2.8.4",
     "express": "^4.16.3",
