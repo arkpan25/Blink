@@ -93,8 +93,8 @@ const DrugSearch = ({ results, setResults }) => {
             !isError &&
             results.map(({ tty, conceptProperties }) => {
               return conceptProperties?.map(({ rxcui, name }) => (
-                <Link to={`/drugs/${rxcui}`}>
-                  <Box key={rxcui} p="12px 24px" mt=".5rem" border="1px solid">
+                <Link to={`/drugs/${rxcui}`} key={`${rxcui}`}>
+                  <Box p="12px 24px" mt=".5rem" border="1px solid">
                     <Text>TTY: {tty}</Text>
                     <Text textAlign="start">Name: {name}</Text>
                   </Box>
